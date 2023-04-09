@@ -1,0 +1,37 @@
+<%= form_with(model: tooth_status) do |form| %>
+  <% if tooth_status.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(tooth_status.errors.count, "error") %> prohibited this tooth_status from being saved:</h2>
+
+      <ul>
+        <% tooth_status.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :current_treatment, style: "display: block" %>
+    <%= form.check_box :current_treatment %>
+  </div>
+
+  <div>
+    <%= form.label :treatment_history, style: "display: block" %>
+    <%= form.text_area :treatment_history %>
+  </div>
+
+  <div>
+    <%= form.label :observations, style: "display: block" %>
+    <%= form.text_area :observations %>
+  </div>
+
+  <div>
+    <%= form.label :tooth_id, style: "display: block" %>
+    <%= form.text_field :tooth_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

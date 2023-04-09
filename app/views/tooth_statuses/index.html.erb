@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tooth statuses</h1>
+
+<div id="tooth_statuses">
+  <% @tooth_statuses.each do |tooth_status| %>
+    <%= render tooth_status %>
+    <p>
+      <%= link_to "Show this tooth status", tooth_status %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tooth status", new_tooth_status_path %>

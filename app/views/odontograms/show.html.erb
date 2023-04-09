@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @odontogram %>
+
+<div>
+  <%= link_to "Edit this odontogram", edit_odontogram_path(@odontogram) %> |
+  <%= link_to "Back to odontograms", odontograms_path %>
+
+  <%= button_to "Destroy this odontogram", @odontogram, method: :delete %>
+</div>

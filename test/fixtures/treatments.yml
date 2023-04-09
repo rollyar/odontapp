@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  treatment_type: 1
+  start_date: 2023-04-09
+  end_date: 2023-04-09
+  duration: 1
+  tooth_status: one
+
+two:
+  treatment_type: 1
+  start_date: 2023-04-09
+  end_date: 2023-04-09
+  duration: 1
+  tooth_status: two

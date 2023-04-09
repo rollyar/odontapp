@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @tooth %>
+
+<div>
+  <%= link_to "Edit this tooth", edit_tooth_path(@tooth) %> |
+  <%= link_to "Back to tooths", tooths_path %>
+
+  <%= button_to "Destroy this tooth", @tooth, method: :delete %>
+</div>
